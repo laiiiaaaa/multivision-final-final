@@ -1,0 +1,227 @@
+:root {
+    --sage-green: #ffffff;
+    --light-beige:#577C8E;
+    --text-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--light-beige);
+    color: var(--sage-green);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    padding: 2rem;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Impact, sans-serif;
+    color: #F2EFEA;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #ccdfeb;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    color: var(--sage-green);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Menu Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #577C8E;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu-overlay.active {
+    display: flex;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; /* Increased gap between items */
+    text-align: center;
+}
+
+.menu-item {
+    color: var(--text-white);
+    text-decoration: none;
+    font-family: Impact, sans-serif;
+    font-size: 5rem; /* Larger font size */
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+    color: #ccdfeb;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1001;
+    background: none;
+    border: none;
+    color: var(--text-white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Most Popular Section */
+.most-popular {
+    padding: 2rem;
+}
+
+.most-popular h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: normal;
+    font-family: Impact, sans-serif;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-direction: row;
+}
+
+.project-item img {
+    width: 350px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.project-item img:hover {
+  
+    transform: scale(1.05);
+}
+
+.project-item p {
+    font-size: 20px;
+    color: var(--sage-green);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Add this to make the project titles bold */
+.project-item p strong {
+    font-weight: bold;
+}
+
+/* How We Work Section */
+.how-we-work {
+    padding: 4rem 2rem;
+    background-color: white;
+    text-align: center;
+}
+
+.how-we-work h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: normal;
+    font-family: Impact, sans-serif;
+}
+
+.how-we-work p {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    background-color: #e5e5e5;
+    margin: 2rem auto;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.subscribe-btn {
+    background-color: #e5e5e5;
+    border: none;
+    padding: 1rem 2rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    color: var(--sage-green);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: var(--sage-green);
+    color: var(--text-white);
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    text-align: right;
+}
+
+.instagram-link {
+    color: var(--sage-green);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image {
+        width: 100%;
+        max-width: 300px;
+    }
+} 

@@ -1,0 +1,221 @@
+:root {
+    --brown-bg: #577C8E;
+    --text-white: #ffffff;
+}
+
+body {
+    font-family: Impact, sans-serif;
+    background-color: var(--brown-bg);
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Header */
+header {
+    padding: 2rem;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Impact, sans-serif;
+    color: var(--text-white);
+    text-decoration: none;
+}
+
+/* What We Do Section */
+.what-we-do {
+    min-height: 100vh;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.what-we-do h2 {
+    font-size: 5rem;
+    color: #ffffff;
+    margin-bottom: 6rem;
+    font-weight: normal;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 4rem;
+}
+
+.content-wrapper p {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.content-wrapper img {
+    width: 30%;
+    height: auto;
+    margin-left: 4rem;
+    align-self: flex-start;
+}
+
+/* Team Section */
+.team {
+    background-color:#87b5cf;
+    padding: 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto 6rem;
+    padding: 2rem 4rem;
+    gap: 2rem;
+}
+
+.team-member img {
+    width: 200px;
+    height: auto;
+    border: 2px solid rgb(108, 117, 102);
+    padding: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #fff,
+                0 0 0 4px rgb(108, 117, 102);
+}
+
+.member-info {
+    flex: 1;
+}
+
+.member-info h3 {
+    font-family: Impact, sans-serif;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.member-info p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    color: #000;
+    line-height: 1.4;
+    max-width: 600px;
+}
+
+/* Second team member (Ruth) */
+.team-member:nth-child(2) {
+    flex-direction: row;
+    text-align: right;
+}
+
+.team-member:nth-child(2) .member-info p {
+    margin-left: auto;
+}
+
+/* Footer */
+footer {
+    background-color: var(--brown-bg);
+    padding: 2rem;
+    text-align: right;
+}
+
+.instagram-link {
+    color: var(--text-white);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Menu Toggle */
+.menu-toggle {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-white);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Menu Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #577C8E;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu-overlay.active {
+    display: flex;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; /* Increased gap between items */
+    text-align: center;
+}
+
+.menu-item {
+    color: var(--text-white);
+    text-decoration: none;
+    font-family: Impact, sans-serif;
+    font-size: 5rem; /* Larger font size */
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+    color: #ccdfeb;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1001;
+    background: none;
+    border: none;
+    color: var(--text-white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.team-member p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #000000;
+} 
