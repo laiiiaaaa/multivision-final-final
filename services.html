@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - MULTIVISION</title>
+    <link rel="stylesheet" href="CSS/services.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">MULTIVISION</a>
+            <button class="menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <div class="menu-overlay">
+        <div class="menu-items">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="our-work.html" class="menu-item">Our work</a>
+            <a href="services.html" class="menu-item">Services</a>
+            <a href="about-us.html" class="menu-item">About us</a>
+            <a href="contact.html" class="menu-item">Contact us</a>
+        </div>
+    </div>
+
+    <section class="services-hero">
+        <h1>Our Services</h1>
+        <p>Our approach is rooted in providing comprehensive, end-to-end services meticulously tailored to meet your brand’s unique needs and aspirations. We take the time to understand your goals, values, and vision, ensuring that every solution we deliver aligns perfectly with your objectives. Through our expertise, we strive to elevate your brand’s identity, crafting a distinct and memorable presence that resonates with your audience. Beyond that, we focus on enhancing your digital footprint, designing platforms and strategies that not only captivate but also engage effectively. </p>
+    </section>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <img src="images/branding-online.jpg" alt="Branding services" class="service-image">
+            <h2>Branding</h2>
+            <p>Complete brand identity development and strategy</p>
+        </div>
+        <div class="service-card">
+            <img src="images/a.storyblok.webp" alt="Digital design services" class="service-image">
+            <h2>Digital design</h2>
+            <p>Website and digital platform design solutions</p>
+        </div>
+        <div class="service-card">
+            <img src="images/Marketing-Agency-Lancashire.jpg" alt="Marketing services" class="service-image">
+            <h2>Marketing</h2>
+            <p>Strategic marketing campaigns and social media management</p>
+        </div>
+    </div>
+
+    <section class="process">
+        <h2>Our Process</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">01</div>
+                <h3>Discovery</h3>
+                <p>Understanding your brand and objectives</p>
+            </div>
+            <div class="step">
+                <div class="step-number">02</div>
+                <h3>Strategy</h3>
+                <p>Developing a tailored approach</p>
+            </div>
+            <div class="step">
+                <div class="step-number">03</div>
+                <h3>Creation</h3>
+                <p>Bringing ideas to life</p>
+            </div>
+            <div class="step">
+                <div class="step-number">04</div>
+                <h3>Delivery</h3>
+                <p>Implementing and launching solutions</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Start Your Project?</h2>
+        <a href="contact.html" class="cta-button">Get in Touch</a>
+    </section>
+
+    <footer>
+        <a href="https://www.instagram.com" class="instagram-link">@multivision.es</a>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu-overlay').classList.toggle('active');
+            this.textContent = this.textContent === '☰' ? '×' : '☰';
+        });
+    </script>
+</body>
+</html> 
